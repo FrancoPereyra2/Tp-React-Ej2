@@ -1,12 +1,23 @@
 import './App.css'
 
-function App() {
+function App ({ friend} ) {
 
   return (
       <secction>
-          
+          <h1>Hola {friend}</h1>
       </secction>
   )
 }
 
-export default App
+
+const modificar = () => {
+
+  return (
+    <div>
+      <App friend ="My friend"/>
+    </div>
+  );
+};
+
+
+export default modificar
